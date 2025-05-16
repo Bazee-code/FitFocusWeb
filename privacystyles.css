@@ -1,0 +1,38 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #AF47E8;
+    color: #fff;
+    padding: 2rem;
+    margin: 0;
+    box-sizing: border-box;
+}
+.privacy-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #AF47E8;
+    padding: 2rem;
+    position: relative;
+}
+.close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+.close-button:hover {
+    color: #000;
+}
+h1, h2 {
+    color: #000;
+}
+p, li {
+    line-height: 1.6;
+}
+ul {
+    margin-bottom: 1.5rem;
+}

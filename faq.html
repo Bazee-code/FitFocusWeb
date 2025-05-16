@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQ | StepFocus</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <link rel="stylesheet" href="faqstyles.css">
+
+</head>
+
+<body>
+  <div class="faq-container">
+    <button class="close-button" onclick="history.back()">&times;</button>
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">How does StepFocus work?</div>
+      <div class="faq-answer">StepFocus blocks selected apps until you've met your daily step count. Once you reach your goal, the apps unlock automatically.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Can I set custom step goals?</div>
+      <div class="faq-answer">Yes! You can set personalized step goals in your app settings depending on your daily activity targets.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What apps can I block?</div>
+      <div class="faq-answer">You can block any installed app or even entire app categories. This feature is fully customizable based on your needs.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Does StepFocus work offline?</div>
+      <div class="faq-answer">Yes. Step counting and app restrictions continue to work even if you're offline. The data syncs once you're back online.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Is my data private?</div>
+      <div class="faq-answer">Absolutely. All your step data and app usage stats are stored locally and never shared with third parties.</div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        const isOpen = answer.style.display === 'block';
+
+        if (isOpen) {
+          gsap.to(answer, {
+            height: 0,
+            opacity: 0,
+            duration: 0.3,
+            onComplete: () => answer.style.display = 'none'
+          });
+        } else {
+          answer.style.display = 'block';
+          gsap.fromTo(answer, 
+            { height: 0, opacity: 0 },
+            { height: 'auto', opacity: 1, duration: 0.4 }
+          );
+        }
+      });
+    });
+
+    gsap.from(".faq-container", {
+      opacity: 0,
+      y: 30,
+      duration: 1,
+      ease: "power2.out"
+    });
+  </script>
+</body>
+</html>

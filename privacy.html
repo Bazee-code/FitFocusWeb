@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - StepFocus</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <link rel="stylesheet" href="privacystyles.css">
+</head>
+
+<body>
+  <div class="privacy-container" id="privacyContent">
+    <button class="close-button" onclick="history.back()">&times;</button>
+    <h1>Privacy Policy</h1>
+    <h2>1. Information Collection</h2>
+    <p><strong>1.1 Required Permissions</strong></p>
+    <ul>
+      <li>Health: Required for accessing your health statistics</li>
+      <li>Screen Time: To display your device usage statistics</li>
+      <li>Notifications: To send relevant app notifications</li>
+    </ul>
+    <p><strong>1.2 Analytics Data</strong></p>
+    <ul>
+      <li>App interaction events</li>
+      <li>Feature usage statistics</li>
+      <li>Duration settings changes</li>
+      <li>Age range (provided during onboarding)</li>
+      <li>Declared screen time statistics</li>
+      <li>User goals and preferences</li>
+      <li>Error events for troubleshooting</li>
+    </ul>
+
+    <h2>2. Data Usage and Protection</h2>
+    <p><strong>2.1 Image Processing</strong></p>
+    <ul>
+      <li>Processed in real-time using Google's Vision API</li>
+      <li>Not stored permanently</li>
+      <li>Not shared beyond the necessary API calls</li>
+      <li>Used solely for grass detection verification</li>
+    </ul>
+    <p><strong>2.2 Location Data</strong></p>
+    <ul>
+      <li>Used only for sunset time calculation</li>
+      <li>Processed locally on your device</li>
+      <li>Not stored or transmitted to any servers</li>
+      <li>Not shared with third parties</li>
+    </ul>
+    <p><strong>2.3 Screen Time Data</strong></p>
+    <ul>
+      <li>Stored locally and not transmitted</li>
+      <li>Free version users access current stats</li>
+      <li>Premium version users access history</li>
+    </ul>
+
+    <h2>3. Third-Party Services</h2>
+    <p><strong>3.1 Google Vision API</strong></p>
+    <ul>
+      <li>Used for grass detection</li>
+      <li>Subject to Google’s privacy policy</li>
+    </ul>
+    <p><strong>3.2 Firebase Analytics</strong></p>
+    <ul>
+      <li>Used for anonymous usage analytics</li>
+      <li>Subject to Google’s privacy policy</li>
+      <li>Collects non-personally identifiable info</li>
+    </ul>
+
+    <h2>4. Your Rights</h2>
+    <ul>
+      <li>Opt-out via device settings</li>
+      <li>Delete local data by uninstalling app</li>
+      <li>Control permissions via device settings</li>
+    </ul>
+
+    <h2>5. Data Retention</h2>
+    <ul>
+      <li>Analytics retained anonymously</li>
+      <li>Local data remains until uninstalled</li>
+      <li>Images processed real-time only</li>
+    </ul>
+
+    <h2>6. Changes to Privacy Policy</h2>
+    <p>We will notify users of changes via app or email.</p>
+
+    <h2>7. Contact Us</h2>
+    <p>If you have any questions, email us at <a href="mailto:help@touchgrass.now">help@touchgrass.now</a>.</p>
+
+    <p><em>Last Updated: February 18, 2025</em></p>
+  </div>
+
+  <script>
+    gsap.from("#privacyContent h1", { opacity: 0, y: -20, duration: 1, delay: 0.2 });
+    gsap.from("#privacyContent h2", { opacity: 0, x: -30, duration: 0.8, stagger: 0.2, delay: 0.5 });
+    gsap.from("#privacyContent p, #privacyContent ul", { opacity: 0, y: 20, duration: 1, stagger: 0.1, delay: 0.8 });
+  </script>
+</body>
+</html>

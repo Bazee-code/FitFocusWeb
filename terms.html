@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - StepFocus</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <link rel="stylesheet" href="termsstyles.css">
+</head>
+
+<body>
+  <div class="privacy-container" id="privacyContent">
+    <button class="close-button" onclick="history.back()">&times;</button>
+    
+    <div class="terms-container" id="terms">
+        <button class="close-button" onclick="history.back()">×</button>
+        <h1>Terms of Service</h1>
+        <h2>1. Introduction</h2>
+        <p>Welcome to touch grass ("the App"). By downloading or using the App, you agree to be bound by these Terms of Service.</p>
+    
+        <h2>2. App Services</h2>
+        <h3>2.1 Free Version Features</h3>
+        <ul>
+          <li>Block up to 2 apps using iOS Family Controls APIs</li>
+          <li>Basic app blocking functionality</li>
+          <li>Real-time grass detection verification</li>
+          <li>Choice of unblock durations: short break, medium break, long break, or all day access</li>
+          <li>Current screen time statistics</li>
+        </ul>
+    
+        <h3>2.2 Premium Version Features</h3>
+        <ul>
+          <li>Block unlimited apps</li>
+          <li>Block entire app categories</li>
+          <li>Access to historical screen time data</li>
+          <li>All features included in free version</li>
+        </ul>
+    
+        <h3>2.3 Pricing and Payments</h3>
+        <ul>
+          <li>Monthly subscription</li>
+          <li>Annual subscription (includes 7-day free trial)</li>
+          <li>Prices may vary by region and are subject to change</li>
+          <li>Payment through iTunes Account after trial period ends</li>
+          <li>Automatic renewal unless turned off 24-hours before the end of the current period</li>
+          <li>Manage and cancel subscriptions in iTunes settings</li>
+        </ul>
+    
+        <h3>2.4 App Blocking Functionality</h3>
+        <p>Uses iOS Family Controls APIs to restrict app access until verified by grass detection with selectable unblock durations.</p>
+    
+        <h3>2.5 Skip Feature</h3>
+        <ul>
+          <li>1 free skip per month</li>
+          <li>Additional skips purchasable</li>
+          <li>50% of profits go to UK rewilding projects</li>
+          <li>Skips are non-refundable and non-transferable</li>
+        </ul>
+    
+        <h2>3. User Rights and Obligations</h2>
+        <h3>3.1 Age and Consent</h3>
+        <p>Users under 13 must have guardian consent. Keep your account credentials safe.</p>
+    
+        <h3>3.2 Acceptable Use</h3>
+        <p>No circumventing app mechanisms or unlawful use. You’re accountable for all activity under your account.</p>
+    
+        <h2>4. Changes to Service</h2>
+        <p>We may change, suspend or discontinue features or update terms with notice.</p>
+    
+        <h2>5. Limitation of Liability</h2>
+        <p>The App is provided "as is". We aren’t responsible for detection accuracy, app availability, or skip functionality.</p>
+    
+        <h2>6. Termination</h2>
+        <p>We reserve the right to terminate accounts at our discretion for violations.</p>
+    
+        <p><strong>Last Updated: February 18, 2025</strong></p>
+      </div>
+  </div>
+
+  <script>
+    gsap.from("#privacyContent h1", { opacity: 0, y: -20, duration: 1, delay: 0.2 });
+    gsap.from("#privacyContent h2", { opacity: 0, x: -30, duration: 0.8, stagger: 0.2, delay: 0.5 });
+    gsap.from("#privacyContent p, #privacyContent ul", { opacity: 0, y: 20, duration: 1, stagger: 0.1, delay: 0.8 });
+  </script>
+</body>
+</html>
