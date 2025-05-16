@@ -44,7 +44,7 @@
                             <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
                               <path d="M6 9l6 6 6-6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><p style="color: #fff; font-size: 1.3rem; font-weight: bold;">Scroll to continue</p></span>
+                            <span><p style="color: #fff; font-size: 1.3rem; font-weight:500;">Scroll to continue</p></span>
                         </div>
                     </div>
 
@@ -116,21 +116,26 @@
 
         <section class="outro">
             <div class="outro_wrapper">
-                <div class="outro_wrapper_title">
-                    <h3 style="color: #000">Join our waitlist and follow our socials to gain exclusive access & updates.</h3>
-                </div>
                 <div>
+                    <h3 style="color: #000">📣 We’d Love to Hear From You</h3>
+                </div>
+                <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
                     <form action="" id="waitlist-form">
                        <!-- <input type="email" placeholder="enter your email" id="user_email" /> -->
                         <!-- <button style="cursor: pointer;">join our waitlist</button> -->
-
-                       <label for="name">Your Name</label>
+                        <div style="margin-bottom: 5px;">
+                            <label for="name">Your Name</label>
+                        </div>
                        <input type="text" id="name" name="name" required />
-                 
-                       <label for="email">Email Address</label>
+                        
+                       <div style="margin-bottom: 5px;">
+                            <label for="email">Email Address</label>
+                       </div>
                        <input type="email" id="email" name="email" required />
-                 
-                       <label for="reason">Reason for Contact</label>
+                       
+                       <div style="margin-bottom: 5px;">
+                        <label for="email">Reason for Contact</label>
+                        </div>
                        <select id="reason" name="reason" required>
                          <option value="">-- Please select --</option>
                          <option value="media">Media Inquiry</option>
@@ -138,22 +143,27 @@
                          <option value="support">Customer Support</option>
                          <option value="other">Other</option>
                        </select>
-                 
-                       <label for="message">Message</label>
+                       
+                       <div style="margin-bottom: 5px;">
+                        <label for="message">Message</label>
+                       </div>
                        <textarea id="message" name="message" required></textarea>
                  
-                       <button type="submit">Send Message</button>
+                       <div>
+                        <button type="submit" style="cursor:pointer">Send Message</button>
+                       </div>
         
                     </form>
                 </div> 
+        
                 <div class="outro_footer">
-                    <div></div>
                     <div>
                         <a>Privacy Policy</a>
                         <a>Terms & Conditions</a>
-                        <a href="https://twitter.com" target="_blank" style="cursor: pointer;">Twitter</a>
                     </div>
-                    <div></div>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <a>&copy; StepFocus 2025. All rights reserved</a>
                 </div>
             </div>
         </section>

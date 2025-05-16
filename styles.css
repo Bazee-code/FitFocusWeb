@@ -276,8 +276,7 @@ a {
     flex-direction: column;
     width: inherit;
     height: inherit;
-    gap: 8rem;
-    justify-content: center;
+    /* gap: 8rem; */
     align-items: center;
     padding: 6.4rem;
 }
@@ -294,8 +293,9 @@ a {
 
 .outro_footer {
     display: flex;
-    position: absolute;
-    bottom: 3%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
 }
 
 .form-wrapper {
@@ -380,6 +380,54 @@ a {
     margin-top: 0.5rem;
     font-size: 0.9rem;
     color: #4f46e5;
+}
+
+input, select, textarea {
+    width: 40vw;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    font-size: 3rem;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+label {
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+input:hover, select:hover, textarea:hover {
+    border: 1px solid #000;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #000; 
+  }
+
+textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+button {
+    width: 40vw;
+    background-color: #fff;
+    color: #000;
+    padding: 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.02);
 }
 
 /* responsive styles */
