@@ -20,15 +20,16 @@
         <section class="horizontal" >
             <div class="horizontal_wrapper">
                 <div class="horizontal_box horizontal_box--full">
-                    <!-- <div style="position: absolute; top: 10%;">
-                        <p style="color: #fff; font-size: 10px;">--insert logo --</p>
-                    </div> -->
+                    <div style="position: absolute; top: 10%;">
+                        <p style="color: #fff; font-size: 20px;">sf</p>
+                    </div>
                         <div class="horizontal_box_title">
-                            <h1 style="color: #fff;">StepFocus |</h1>
+                            <h1 style="color: #fff;" id="logo-title">StepFocus </h1>
+                            <h1 style="color: #000;">|</h1>
                             <div class="horizontal_box_title_extra">
                                 <span style="color: #000;">Fitness Meets Productivity</span>
                             </div>
-                            <video id="demoVideo" autoplay muted loop playsinline style="width: 50%; height:95vh ; border-radius: 20px;">
+                            <video id="demoVideo" autoplay muted loop playsinline style="width: 50%; height:80vh ; border-radius: 20px;">
                                 <source src="/assets/ScreenRecording.mp4" type="video/mp4" />
                                 Your browser does not support the video tag.
                               </video>
@@ -118,12 +119,33 @@
                 <div class="outro_wrapper_title">
                     <h3 style="color: #000">Join our waitlist and follow our socials to gain exclusive access & updates.</h3>
                 </div>
-                <div class="form-wrapper">
+                <div>
                     <form action="" id="waitlist-form">
-                        <input type="email" placeholder="enter your email" id="user_email" />
-                        <button style="cursor: pointer;">join our waitlist</button>
+                       <!-- <input type="email" placeholder="enter your email" id="user_email" /> -->
+                        <!-- <button style="cursor: pointer;">join our waitlist</button> -->
+
+                       <label for="name">Your Name</label>
+                       <input type="text" id="name" name="name" required />
+                 
+                       <label for="email">Email Address</label>
+                       <input type="email" id="email" name="email" required />
+                 
+                       <label for="reason">Reason for Contact</label>
+                       <select id="reason" name="reason" required>
+                         <option value="">-- Please select --</option>
+                         <option value="media">Media Inquiry</option>
+                         <option value="investor">Investor Relations</option>
+                         <option value="support">Customer Support</option>
+                         <option value="other">Other</option>
+                       </select>
+                 
+                       <label for="message">Message</label>
+                       <textarea id="message" name="message" required></textarea>
+                 
+                       <button type="submit">Send Message</button>
+        
                     </form>
-                </div>
+                </div> 
                 <div class="outro_footer">
                     <div></div>
                     <div>
@@ -154,17 +176,38 @@
             duration: 1.2,
             ease: "power1.inOut"
         });
-        window.addEventListener('load', () => {
-        gsap.fromTo("#demoVideo", 
-        { rotationY: 0 }, 
-        {
-            rotationY: 360,
-            duration: 1.5,
-            ease: "power2.out",
-            transformOrigin: "center center",
-        }
-        );
-    });
+        gsap.to("#logo-title", {
+            scale: 1.1,
+            repeat: -1,
+            yoyo: true,
+            duration: 10,
+            opacity: 1,
+            ease: "power1.inOut",
+            onUpdate: function () {
+                const progress = this.progress();
+                const newOpacity = Math.abs(1 - (progress * 6)); // Fades out as it shrinks
+                gsap.set("#logo-title", { opacity: newOpacity });
+            }
+        });
     }
 </script>
+<script>
+    function spinAnimation() {
+      gsap.fromTo("#demoVideo", 
+        { rotationY: 0 }, 
+        {
+          rotationY: 360,
+          duration: 1.5,
+          ease: "power2.out",
+          transformOrigin: "center center"
+        }
+      );
+    }
+  
+    // Run once when the page loads
+    window.addEventListener('load', () => {
+      spinAnimation(); // Initial run
+      setInterval(spinAnimation, 34000); // Repeat every 15 seconds
+    });
+  </script>
 </html>
