@@ -20,25 +20,24 @@
         <section class="horizontal" >
             <div class="horizontal_wrapper">
                 <div class="horizontal_box horizontal_box--full">
-                    <div style="position: absolute; top: 10%;">
+                    <!-- <div style="position: absolute; top: 10%;">
                         <p style="color: #fff; font-size: 30px;">sf</p>
-                    </div>
+                    </div> -->
                         <div class="horizontal_box_title">
                             <h1 style="color: #fff;" id="logo-title">StepFocus </h1>
-                            <h1 style="color: #000;">|</h1>
+                            <h1 style="color: #000;" id="separator">|</h1>
                             <div class="horizontal_box_title_extra">
-                                <span style="color: #000;">Fitness Meets Productivity</span>
+                                <span style="color: #000;" id="title-mob">Fitness Meets Productivity</span>
                             </div>
-                            <video id="demoVideo" autoplay muted loop playsinline style="width: 50%; height:80vh ; border-radius: 20px;">
-                                <source src="/assets/ScreenRecording.mp4" type="video/mp4" />
-                                Your browser does not support the video tag.
-                              </video>
+                            <div class="video-container">
+                                <video id="demoVideo" autoplay muted loop playsinline>
+                                    <source src="/assets/ScreenRecording.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
                         </div>
-                       
-                    <!-- <div class="horizontal_box_media">
-                        <img src="./assets/arrow-down.svg" />
-                    </div> -->
 
+                       
                     <div class="horizontal_box_media1">
                         <div class="scroll-indicator">
                             <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
@@ -69,15 +68,15 @@
                         <div class="horizontal_box_subtitle">
                             <h1>🚀 Key Features</h1>
                         </div>
-                        <div class="horizontal_box_title" >
-                            <h2 style="color: #fff; padding : 2rem; width: 90%; text-align: center;">Unlock your favorite apps by engaging in physical activity. StepFocus connects to Apple HealthKit and helps you stay active by limiting app access to apps you select until your daily physical activity goals are met.</h2>
+                        <div class="horizontal_box_title2" >
+                            <h2 class="features-title">Unlock your favorite apps by engaging in physical activity. StepFocus connects to Apple HealthKit and helps you stay active by limiting app access to apps you select until your daily physical activity goals are met.</h2>
                         </div>
                         <div class="horizontal_box_paragraph">
                             <ul>
                                 <h4 style="color: #000;">🔒 Smart Locking</h4>
                                 <li>Select the apps you want to lock. StepFocus will keep them locked until your physical activity goals are reached.</li>
                                 <h4 style="color: #000;">📊 HealthKit Integration</h4>
-                                <li>Seamlessly integrates with Apple HealthKit to track your steps in real time.</li>
+                                <li>Seamlessly integrate with Apple HealthKit to track your steps in real time.</li>
                                 <h4 style="color: #000;">🚀 Build Healthy Habits</h4>
                                 <li>Stay motivated and reduce screen time by engaging in physical activity to earn access to your apps.</li>
                                 <h4 style="color: #000;">📱 App Monitoring</h4>
@@ -99,7 +98,7 @@
                         <div class="horizontal_box_paragraph">
                             <ul>
                                 <h4 style="color: #000;">Monthly Plan – $5.99/month</h4>
-                                <li>Perfect for trying things out or staying flexible with your fitness routine.</li>
+                                <li>Perfect for trying things out & staying flexible with your fitness routine.</li>
                                 <h4 style="color: #000;">Annual Plan – $69.99/year (Save over 15%)</h4>
                                 <li>Ideal for dedicated users who want full access and better value long-term.</li>
                                 <li>✅ Full access to all StepGuard features</li>
@@ -117,9 +116,9 @@
         <section class="outro">
             <div class="outro_wrapper">
                 <div>
-                    <h3 style="color: #000">📣 We’d Love to Hear From You</h3>
+                    <h1 style="color: #000;">📣 We’d Love to Hear From You</h1>
                 </div>
-                <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <div class="form-container">
                     <form action="" id="waitlist-form">
                        <!-- <input type="email" placeholder="enter your email" id="user_email" /> -->
                         <!-- <button style="cursor: pointer;">join our waitlist</button> -->
@@ -220,5 +219,5 @@
       spinAnimation(); // Initial run
       setInterval(spinAnimation, 34000); // Repeat every 15 seconds
     });
-  </script>
+</script>
 </html>
