@@ -210,6 +210,7 @@ a {
     overflow: hidden;
     width: 60vw;
     justify-content: center;
+    background-color: red;
 }
 
 .horizontal_box_paragraph_media {
@@ -514,7 +515,7 @@ button:hover {
     .horizontal_box_title {
         /* height: 100vh; */
         display: block;
-        margin-top: 1rem;
+        margin-top: 3rem;
     }
 
     h1 {
@@ -571,7 +572,7 @@ button:hover {
         justify-content: center;
         width: 100%;
         overflow: hidden;
-        margin-top: 2rem;
+        margin-top: 4rem;
     }
 
     .horizontal_box_title2 {
