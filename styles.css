@@ -210,7 +210,7 @@ a {
     overflow: hidden;
     width: 60vw;
     justify-content: center;
-    background-color: red;
+    background-color: #AF47E8;
 }
 
 .horizontal_box_paragraph_media {
@@ -597,7 +597,7 @@ button:hover {
 
     .outro {
         position: relative;
-        width: 100%;
+        width: 100vw;
         height: 80vh;
         background-color: #AF47E8;
         color: var(--primary);
